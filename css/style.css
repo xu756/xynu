@@ -6,7 +6,6 @@
 /* 定义全宽100%的div*/
 .full-width {
     width: 100%;
-
 }
 
 /* 
@@ -20,6 +19,11 @@
 
 li {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
 }
 
 .TitleInfo {
@@ -52,4 +56,91 @@ li {
 .TitleInfo span a:hover {
     color: #fff;
     text-decoration: #fff solid underline;
+}
+
+.nav {
+    height: 84px;
+    position: relative;
+    z-index: 999;
+}
+
+.nav-content {
+    padding: 10px 0;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-content:last-child {
+    position: relative;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.logo, .btext {
+    flex: 2;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.nav-list {
+    flex: 8;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.nav-list li a {
+    padding-left: 12px;
+    font-size: 16px;
+    line-height: 60px;
+}
+
+.nav-list li a:hover {
+    color: #f04;
+    text-decoration: underline;
+    text-decoration-color: #f04;
+}
+
+/* 子导航栏*/
+.btext {
+    margin-top: 50px;
+    height: 92px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #fbb;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #f40;
+    padding: 10px 0;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 46px;
+    letter-spacing: 6px;
+}
+
+.nav-children li a {
+    padding-left: 12px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+/* css 显示方法1*/
+.nav-content:nth-child(2) {
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.nav:hover .nav-content:nth-child(2) {
+    visibility: inherit;
+    transition: all 0.5s;
+}
+
+/*轮播图*/
+.banner {
+    height: 500px;
+    background-color: #006731;
 }
