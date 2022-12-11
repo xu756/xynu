@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* 定义全宽100%的div*/
+.full-width {
+  width: 100%;
+
+}
+
+/* 
+正常宽度  1200px
+*/
+.normal-width {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+li {
+  list-style: none;
+}
+
+.TitleInfo {
+  background-color: #006731;
+  height: 37px;
+}
+
+/*  左边内容*/
+.TitleInfo span:first-child {
+  float: left;
+}
+
+/* 右边内容 */
+.TitleInfo span:last-child {
+  float: right;
+}
+
+/*  文字样式 */
+.TitleInfo span a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  line-height: 37px;
+  float: left;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+/* 悬浮状态 */
+.TitleInfo span a:hover {
+  color: #fff;
+  text-decoration: #fff solid underline;
+}
