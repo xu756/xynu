@@ -131,12 +131,10 @@ a {
 /* css 显示方法1*/
 .nav-content:nth-child(2) {
     visibility: hidden;
-    transition: all 0.5s;
 }
 
 .nav:hover .nav-content:nth-child(2) {
     visibility: inherit;
-    transition: all 0.5s;
 }
 
 /*轮播图*/
