@@ -26,6 +26,7 @@ a {
     color: #333;
 }
 
+/* -------------------------------*/
 .TitleInfo {
     background-color: #006731;
     height: 37px;
@@ -58,26 +59,31 @@ a {
     text-decoration: #fff solid underline;
 }
 
+/* -------------------------------*/
 .nav {
     height: 84px;
-    position: relative;
-    z-index: 999;
 }
 
 .nav-content {
-    padding: 10px 0;
     display: flex;
     background-color: rgba(255, 255, 255, 0.6);
 }
 
+.nav-content:first-child {
+    padding: 10px 0;
+}
+
 .nav-content:last-child {
     position: relative;
-    z-index: 999;
+    z-index: 100;
     background-color: rgba(255, 255, 255, 0.6);
+    visibility: hidden;
 }
 
 .logo, .btext {
     flex: 2;
+    position: relative;
+    z-index: 101;
 }
 
 .logo img {
@@ -86,13 +92,16 @@ a {
 
 .nav-list {
     flex: 8;
-    display: flex;
-    justify-content: space-around;
+}
+
+.nav-content:first-child .nav-list li {
+    float: left;
+    width: 12.5%;
 }
 
 
 .nav-list li a {
-    padding-left: 12px;
+    padding: 0 12px;
     font-size: 16px;
     line-height: 60px;
 }
@@ -122,19 +131,19 @@ a {
     letter-spacing: 6px;
 }
 
+.nav-children {
+    float: left;
+    width: 12.5%;
+}
+
 .nav-children li a {
-    padding-left: 12px;
+    padding: 0 12px;
     font-size: 16px;
     line-height: 30px;
 }
 
-/* css 显示方法1*/
-.nav-content:nth-child(2) {
-    visibility: hidden;
-}
-
-.nav:hover .nav-content:nth-child(2) {
-    visibility: inherit;
+.nav-children-active {
+    background-color: #fff !important;
 }
 
 /*轮播图*/
