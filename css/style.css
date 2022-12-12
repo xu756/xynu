@@ -63,9 +63,12 @@ a {
 }
 
 .nav-content {
-    padding: 10px 0;
     display: flex;
     background-color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-content:first-child {
+    padding: 10px 0;
 }
 
 .nav-content:last-child {
@@ -87,13 +90,16 @@ a {
 
 .nav-list {
     flex: 8;
-    display: flex;
-    justify-content: space-around;
+}
+
+.nav-content:first-child .nav-list li {
+    float: left;
+    width: 12.5%;
 }
 
 
 .nav-list li a {
-    padding-left: 12px;
+    padding: 0 12px;
     font-size: 16px;
     line-height: 60px;
 }
@@ -123,10 +129,19 @@ a {
     letter-spacing: 6px;
 }
 
+.nav-children {
+    float: left;
+    width: 12.5%;
+}
+
 .nav-children li a {
-    padding-left: 12px;
+    padding: 0 12px;
     font-size: 16px;
     line-height: 30px;
+}
+
+.nav-children-active {
+    background-color: #fff !important;
 }
 
 /*轮播图*/
